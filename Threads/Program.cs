@@ -9,9 +9,20 @@ namespace Threads
 {
     class Program
     {
-        public static void Main(string[] args)
-        {
+        public event EventHandler ThresholdReached;
 
+        public static void Main()
+        {
+            Thread t = new Thread(new ThreadStart(ThreadMethod));
+            t.Start();
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Main thread: Do some work.");
+                Thread.Sleep(0);
+            }
+            t.Join();
+
+            Console.ReadLine();
         }
 
         public static void ThreadMethod()
