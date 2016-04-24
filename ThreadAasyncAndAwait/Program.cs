@@ -13,8 +13,6 @@ namespace ThreadAasyncAndAwait
         static void Main(string[] args)
         {
             string result = DownloadContent().Result;
-            Console.WriteLine("Sexo Antes");
-
             Console.WriteLine(result);
         }
 
@@ -22,7 +20,7 @@ namespace ThreadAasyncAndAwait
         {
             using (HttpClient client = new HttpClient())
             {
-                Thread.Sleep(300000);
+                //Thread.Sleep(300000);
                 string result = await client.GetStringAsync("http://www.microsoft.com");
                 return result;
             }
