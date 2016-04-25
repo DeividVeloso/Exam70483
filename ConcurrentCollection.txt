@@ -1,0 +1,18 @@
+﻿Coleções Concorrentes (Concurrent Collections)
+
+Quando trabalhamos com paralelismo de processos pode ocorrer de várias Threads tentarem acessar o mesmo recurso ou informação ao mesmo tempo, 
+o que talvez não seja o desejado, já que as vezes precisamos garantir que a informação fique íntegra para cada Thread por vez, 
+imagine um processo lendo um saldo bancário enquanto outro efetua o saque, as informações serão erradas.
+
+Para garantir essa integridade mesmo executando múltiplas Threads temos o conceito de Thread-Safe, 
+onde o objetivo é garantir que não teremos conflito entre Threads concorrendo pelo mesmo recurso, 
+mas sim uma fila para que cada um tenha sua vez, o que não exclui o conceito de paralelismo, 
+já que só neste momento temos uma concorrência, fora deste contexto, as Threads estarão rodando em paralelo fazendo outras operações.
+
+O .NET Framework oferece classes de coleções que foram criadas exatamente para ambientes concorrentes já preparadas para o conceito Thread-safe. As coleções são as seguintes:
+
+■ BlockingCollection 
+■ ConcurrentBag 
+■ ConcurrentDictionary 
+■ ConcurrentQueue 
+■ ConcurrentStack

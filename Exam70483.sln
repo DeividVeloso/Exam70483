@@ -108,6 +108,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregateExceptionUsing", "AggregateExceptionUsing\AggregateExceptionUsing.csproj", "{B4F62B61-55B1-4A3B-821C-33AD2B08F643}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConcurrentCollections", "ConcurrentCollections", "{A289D3DE-17BF-4267-B114-3DF06C3FACA3}"
+	ProjectSection(SolutionItems) = preProject
+		ConcurrentCollection.txt = ConcurrentCollection.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockingCollectionUsing", "BlockingCollectionUsing\BlockingCollectionUsing.csproj", "{E1074B03-07A8-44CD-983D-92130542AF6B}"
 EndProject
