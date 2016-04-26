@@ -138,6 +138,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterlockedUsing", "Interlo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadedProblem", "MultithreadedProblem\MultithreadedProblem.csproj", "{63279660-B157-4374-95A1-B58988B7D5DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeNonAtomicOperation", "ExchangeNonAtomicOperation\ExchangeNonAtomicOperation.csproj", "{48AA4AB7-1BC2-45F1-B68B-79A43BF87B2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -348,6 +350,10 @@ Global
 		{63279660-B157-4374-95A1-B58988B7D5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63279660-B157-4374-95A1-B58988B7D5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63279660-B157-4374-95A1-B58988B7D5DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48AA4AB7-1BC2-45F1-B68B-79A43BF87B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AA4AB7-1BC2-45F1-B68B-79A43BF87B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AA4AB7-1BC2-45F1-B68B-79A43BF87B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AA4AB7-1BC2-45F1-B68B-79A43BF87B2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -417,5 +423,6 @@ Global
 		{2ED80CA8-A160-4752-ABE3-0645FA652586} = {AC3E7F92-B994-44C5-B470-89D8052F0FC9}
 		{2222E183-075E-477F-9B11-427DE21B03ED} = {AC3E7F92-B994-44C5-B470-89D8052F0FC9}
 		{63279660-B157-4374-95A1-B58988B7D5DD} = {AC3E7F92-B994-44C5-B470-89D8052F0FC9}
+		{48AA4AB7-1BC2-45F1-B68B-79A43BF87B2C} = {AC3E7F92-B994-44C5-B470-89D8052F0FC9}
 	EndGlobalSection
 EndGlobal

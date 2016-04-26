@@ -31,6 +31,8 @@ namespace InterlockedUsing
             /*
                 Classe Interlocked garanti a Atomicidade, não interfere entre as Threads, 
                ele garante que nenhuma thread vai interferir no valor referenciado até terminar a operação
+             * Interlocked guarantees that the increment and decrement operations are executed atomically. 
+             * No other thread will see any intermediate results.
              */
         }
     }
