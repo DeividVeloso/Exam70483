@@ -15,12 +15,24 @@ namespace ExchangeNonAtomicOperation
             Task t1 = Task.Run(() =>
             {
 
-                if (value == 1)
-                {
-                    // Removing the following line will change the output
-                    //Thread.Sleep(1000);
-                    value = 2;
-                }
+                //if (value == 1)
+                //{
+                // Removing the following line will change the output
+                //Thread.Sleep(1000);
+
+                //value = 2;
+
+                /*
+                  1 - Pega o valor na memoria
+                  2 - Coloca o novo valor
+                  3 - Verifica se o valor da memoria é igual a 1
+                     if (value == 1)
+                        value = 2
+                 */
+
+                Interlocked.CompareExchange(ref value, 2, 1);
+
+                //}
             });
             Task t2 = Task.Run(() =>
             {
