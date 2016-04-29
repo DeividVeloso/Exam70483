@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap01", "Cap01", "{878A1189-7DF1-4045-9098-20030CA1232C}"
 EndProject
@@ -145,6 +145,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-ContinueWithCanceledException", "08-ContinueWithCanceledException\08-ContinueWithCanceledException.csproj", "{07CA8385-BC0F-4FAC-A80C-49CA81457835}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective 1.3", "Objective 1.3", "{9C674150-94C2-40E2-9B03-BBD478108161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullCoalescingOperator", "NullCoalescingOperator\NullCoalescingOperator.csproj", "{C203757B-FADD-4D23-AAFA-912CF3D973C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -372,6 +374,10 @@ Global
 		{07CA8385-BC0F-4FAC-A80C-49CA81457835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07CA8385-BC0F-4FAC-A80C-49CA81457835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07CA8385-BC0F-4FAC-A80C-49CA81457835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C203757B-FADD-4D23-AAFA-912CF3D973C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C203757B-FADD-4D23-AAFA-912CF3D973C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C203757B-FADD-4D23-AAFA-912CF3D973C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C203757B-FADD-4D23-AAFA-912CF3D973C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -445,5 +451,6 @@ Global
 		{F5F7DF5A-B993-4434-8953-77E340CF5D27} = {6CB9B5D1-1B0A-43FB-8C23-B4569C4A1D29}
 		{07CA8385-BC0F-4FAC-A80C-49CA81457835} = {6CB9B5D1-1B0A-43FB-8C23-B4569C4A1D29}
 		{9C674150-94C2-40E2-9B03-BBD478108161} = {53F3BF58-F67E-4EEB-B603-68A2B940982E}
+		{C203757B-FADD-4D23-AAFA-912CF3D973C2} = {9C674150-94C2-40E2-9B03-BBD478108161}
 	EndGlobalSection
 EndGlobal
