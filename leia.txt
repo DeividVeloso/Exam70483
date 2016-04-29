@@ -1,0 +1,3 @@
+For usar quando você sabe a quantidade de linhas a ser percorrida ou iterada
+While usar quando você não sabe a quantidade de linhas que será percorrida. Testa primeiro a condição para depois executar
+Do while usar quando você precisa que seja executado antes de testar a condição
