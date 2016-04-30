@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateUsing", "DelegateUs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastDelegateUsing", "MulticastDelegateUsing\MulticastDelegateUsing.csproj", "{A48ECFCE-686F-4120-A599-FAB744DF79CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressionDelegate", "LambdaExpressionDelegate\LambdaExpressionDelegate.csproj", "{7CC4A60D-E4AA-4314-B653-A2CC188ED450}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -407,6 +409,10 @@ Global
 		{A48ECFCE-686F-4120-A599-FAB744DF79CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A48ECFCE-686F-4120-A599-FAB744DF79CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A48ECFCE-686F-4120-A599-FAB744DF79CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -486,5 +492,6 @@ Global
 		{DF98387F-F5DE-46C0-AB5A-14A0128127F6} = {53F3BF58-F67E-4EEB-B603-68A2B940982E}
 		{E0F77096-994E-45A1-94E1-60DF1B894E9D} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 		{A48ECFCE-686F-4120-A599-FAB744DF79CF} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
+		{7CC4A60D-E4AA-4314-B653-A2CC188ED450} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 	EndGlobalSection
 EndGlobal
