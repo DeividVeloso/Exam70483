@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap01", "Cap01", "{878A1189-7DF1-4045-9098-20030CA1232C}"
 EndProject
@@ -156,6 +156,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-LoopBreakUsing", "03-LoopBreakUsing\03-LoopBreakUsing.csproj", "{D1D65FF2-13C0-48B2-AF03-FD1B9733210C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective 1.4", "Objective 1.4", "{DF98387F-F5DE-46C0-AB5A-14A0128127F6}"
+	ProjectSection(SolutionItems) = preProject
+		Delegates.txt = Delegates.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateUsing", "DelegateUsing\DelegateUsing.csproj", "{E0F77096-994E-45A1-94E1-60DF1B894E9D}"
 EndProject
@@ -166,6 +169,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{F8F4449B-8191-4C8D-B983-B69E3B626611}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDateFormat", "JsonDateFormat\JsonDateFormat.csproj", "{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpreMutipleStatements", "LambdaExpreMutipleStatements\LambdaExpreMutipleStatements.csproj", "{1CF38706-ED46-4C92-9442-D48A2E7C5574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionDelegateUsing", "ActionDelegateUsing\ActionDelegateUsing.csproj", "{C8A19759-A903-4F17-AF32-5CF240EB6FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionExposeEventUsing", "ActionExposeEventUsing\ActionExposeEventUsing.csproj", "{9217C22D-D4BC-4D48-A8F2-5F427C480CB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandlerUsing", "EventHandlerUsing\EventHandlerUsing.csproj", "{29DB5F06-9A10-4914-B020-9D034268FEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventWithExceptionList", "EventWithExceptionList\EventWithExceptionList.csproj", "{2A9FA2CB-7047-4624-B0D8-B6F0AB04907B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -421,6 +434,26 @@ Global
 		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF38706-ED46-4C92-9442-D48A2E7C5574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF38706-ED46-4C92-9442-D48A2E7C5574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF38706-ED46-4C92-9442-D48A2E7C5574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF38706-ED46-4C92-9442-D48A2E7C5574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A19759-A903-4F17-AF32-5CF240EB6FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A19759-A903-4F17-AF32-5CF240EB6FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A19759-A903-4F17-AF32-5CF240EB6FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A19759-A903-4F17-AF32-5CF240EB6FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9217C22D-D4BC-4D48-A8F2-5F427C480CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9217C22D-D4BC-4D48-A8F2-5F427C480CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9217C22D-D4BC-4D48-A8F2-5F427C480CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9217C22D-D4BC-4D48-A8F2-5F427C480CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29DB5F06-9A10-4914-B020-9D034268FEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DB5F06-9A10-4914-B020-9D034268FEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DB5F06-9A10-4914-B020-9D034268FEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DB5F06-9A10-4914-B020-9D034268FEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9FA2CB-7047-4624-B0D8-B6F0AB04907B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9FA2CB-7047-4624-B0D8-B6F0AB04907B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9FA2CB-7047-4624-B0D8-B6F0AB04907B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9FA2CB-7047-4624-B0D8-B6F0AB04907B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -502,5 +535,10 @@ Global
 		{A48ECFCE-686F-4120-A599-FAB744DF79CF} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 		{7CC4A60D-E4AA-4314-B653-A2CC188ED450} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8} = {F8F4449B-8191-4C8D-B983-B69E3B626611}
+		{1CF38706-ED46-4C92-9442-D48A2E7C5574} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
+		{C8A19759-A903-4F17-AF32-5CF240EB6FE9} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
+		{9217C22D-D4BC-4D48-A8F2-5F427C480CB7} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
+		{29DB5F06-9A10-4914-B020-9D034268FEF7} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
+		{2A9FA2CB-7047-4624-B0D8-B6F0AB04907B} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 	EndGlobalSection
 EndGlobal

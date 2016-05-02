@@ -1,0 +1,14 @@
+Delegates Métodos
+	- podem ser usados como métodos de evento retornando valores e passando metódos em variavès, podendo passar uma lista de métodos se quiser
+	- pode criar delegates com lambda expression que são funções anonimas, pois não precisa de nome.
+	- Classe Func<> pode criar funções em delegates
+	Delegates Action
+	- São ações eventos sem retorno VOID
+	- Acton<> cria ações sem retorno
+		Action<int, int> calc = (x, y) =>
+		{
+		Console.WriteLine(x + y);
+		};
+		calc(3, 4);
+
+
