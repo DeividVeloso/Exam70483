@@ -163,6 +163,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastDelegateUsing", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressionDelegate", "LambdaExpressionDelegate\LambdaExpressionDelegate.csproj", "{7CC4A60D-E4AA-4314-B653-A2CC188ED450}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{F8F4449B-8191-4C8D-B983-B69E3B626611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDateFormat", "JsonDateFormat\JsonDateFormat.csproj", "{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -413,6 +417,10 @@ Global
 		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC4A60D-E4AA-4314-B653-A2CC188ED450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -493,5 +501,6 @@ Global
 		{E0F77096-994E-45A1-94E1-60DF1B894E9D} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 		{A48ECFCE-686F-4120-A599-FAB744DF79CF} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
 		{7CC4A60D-E4AA-4314-B653-A2CC188ED450} = {DF98387F-F5DE-46C0-AB5A-14A0128127F6}
+		{66BC2C43-A52C-4A76-B4B7-ADF4A9576DE8} = {F8F4449B-8191-4C8D-B983-B69E3B626611}
 	EndGlobalSection
 EndGlobal
