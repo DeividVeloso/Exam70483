@@ -188,6 +188,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-CatchingDifferentExcepti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-FinallyBlock", "03-FinallyBlock\03-FinallyBlock.csproj", "{F4FF0B5F-1807-4CDF-8FC2-F0271D95A253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-EnvironmentFailFastUsing", "04-EnvironmentFailFastUsing\04-EnvironmentFailFastUsing.csproj", "{239813B6-8089-459B-A8F0-5298771F30BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -474,6 +476,10 @@ Global
 		{F4FF0B5F-1807-4CDF-8FC2-F0271D95A253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FF0B5F-1807-4CDF-8FC2-F0271D95A253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FF0B5F-1807-4CDF-8FC2-F0271D95A253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239813B6-8089-459B-A8F0-5298771F30BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239813B6-8089-459B-A8F0-5298771F30BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239813B6-8089-459B-A8F0-5298771F30BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239813B6-8089-459B-A8F0-5298771F30BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -564,5 +570,6 @@ Global
 		{677AD0B7-4263-47C6-BE0F-8232E0D66D14} = {53092241-AD80-4223-8E50-06CF48FC17F9}
 		{DA18A211-EA09-4AA0-A9D6-AD1F15B6A7D3} = {53092241-AD80-4223-8E50-06CF48FC17F9}
 		{F4FF0B5F-1807-4CDF-8FC2-F0271D95A253} = {53092241-AD80-4223-8E50-06CF48FC17F9}
+		{239813B6-8089-459B-A8F0-5298771F30BA} = {53092241-AD80-4223-8E50-06CF48FC17F9}
 	EndGlobalSection
 EndGlobal
