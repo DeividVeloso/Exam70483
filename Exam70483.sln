@@ -223,6 +223,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastingUsing", "CastingUsin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicUsingExcel", "DynamicUsingExcel\DynamicUsingExcel.csproj", "{B9F3CAC2-4752-4647-9263-77FD3B2300DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectAndPrivateUsing", "ProtectAndPrivateUsing\ProtectAndPrivateUsing.csproj", "{F05B6E82-E359-4EB2-893F-8EEA4D1FE8AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -541,6 +543,10 @@ Global
 		{B9F3CAC2-4752-4647-9263-77FD3B2300DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9F3CAC2-4752-4647-9263-77FD3B2300DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9F3CAC2-4752-4647-9263-77FD3B2300DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05B6E82-E359-4EB2-893F-8EEA4D1FE8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05B6E82-E359-4EB2-893F-8EEA4D1FE8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05B6E82-E359-4EB2-893F-8EEA4D1FE8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05B6E82-E359-4EB2-893F-8EEA4D1FE8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -647,5 +653,6 @@ Global
 		{F342F0C2-59FF-4E06-BB37-EE6405D27CEA} = {076645D4-9893-4FC5-8766-C74D21F00A75}
 		{F6C28571-F188-4645-B124-A70B99C717EE} = {F68CB464-6970-4E85-853A-0CADD58F0C01}
 		{B9F3CAC2-4752-4647-9263-77FD3B2300DC} = {F68CB464-6970-4E85-853A-0CADD58F0C01}
+		{F05B6E82-E359-4EB2-893F-8EEA4D1FE8AA} = {8B5FE353-A073-4C55-B2C0-01C90658D4BC}
 	EndGlobalSection
 EndGlobal
