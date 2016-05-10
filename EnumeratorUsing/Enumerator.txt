@@ -1,0 +1,3 @@
+﻿Usado para acessar qualquer tipo de lista, sem precisar saber o tipo.
+
+IEnumerable<T> is your table and IEnumerator is a cursor that keeps track of where you are in the table
