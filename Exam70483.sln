@@ -237,6 +237,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncWithLambdaAnonymousMeth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTreeExample", "ExpressionTreeExample\ExpressionTreeExample.csproj", "{328EA386-ABB6-4BD8-94A0-AEB50AFA2D30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementingIDisposableFinalizer", "ImplementingIDisposableFinalizer\ImplementingIDisposableFinalizer.csproj", "{488AD439-3100-49B8-A622-8EE5C03DE50C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -583,6 +585,10 @@ Global
 		{328EA386-ABB6-4BD8-94A0-AEB50AFA2D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{328EA386-ABB6-4BD8-94A0-AEB50AFA2D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{328EA386-ABB6-4BD8-94A0-AEB50AFA2D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -696,5 +702,6 @@ Global
 		{D42604BB-6F14-487A-8A1E-061CB464423F} = {F2723596-8747-4729-B413-DB3B0C16EA59}
 		{CAFE3BA0-BF43-4C38-AEC9-FD8D5B918DE1} = {0C060F7F-2517-4098-92E1-79175853AA42}
 		{328EA386-ABB6-4BD8-94A0-AEB50AFA2D30} = {0C060F7F-2517-4098-92E1-79175853AA42}
+		{488AD439-3100-49B8-A622-8EE5C03DE50C} = {46F7EE26-EA87-4922-A4D1-4F1B986B48B0}
 	EndGlobalSection
 EndGlobal
