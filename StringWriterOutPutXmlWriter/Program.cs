@@ -34,6 +34,9 @@ namespace StringWriterOutPutXmlWriter
                 decimal price = decimal.Parse(reader.ReadInnerXml(),
                 new CultureInfo("en-US")); // Make sure that you read the decimal part correctly
             }
+
+            string value = "My Sample Value";
+            string subString = value.Substring(3, 6);
         }
 
     }
