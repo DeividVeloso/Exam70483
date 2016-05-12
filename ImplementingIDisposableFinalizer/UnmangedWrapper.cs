@@ -19,7 +19,7 @@ namespace ImplementingIDisposableFinalizer
             Dispose(false);
         }
         public void Close()
-        {
+        { 
             Dispose();
         }
         public void Dispose()
