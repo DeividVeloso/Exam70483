@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap01", "Cap01", "{878A1189-7DF1-4045-9098-20030CA1232C}"
 EndProject
@@ -240,6 +240,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarbageCollector", "GarbageCollector\GarbageCollector.csproj", "{0D7A6748-9D6F-4508-9E85-3B4A1BF01238}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposeUsing", "IDisposeUsing\IDisposeUsing.csproj", "{CDD3203C-6821-4D99-8B6B-0022FACBB743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementingIDisposableFinalizer", "ImplementingIDisposableFinalizer\ImplementingIDisposableFinalizer.csproj", "{488AD439-3100-49B8-A622-8EE5C03DE50C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -595,6 +597,10 @@ Global
 		{CDD3203C-6821-4D99-8B6B-0022FACBB743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDD3203C-6821-4D99-8B6B-0022FACBB743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDD3203C-6821-4D99-8B6B-0022FACBB743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488AD439-3100-49B8-A622-8EE5C03DE50C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -710,5 +716,6 @@ Global
 		{328EA386-ABB6-4BD8-94A0-AEB50AFA2D30} = {0C060F7F-2517-4098-92E1-79175853AA42}
 		{0D7A6748-9D6F-4508-9E85-3B4A1BF01238} = {46F7EE26-EA87-4922-A4D1-4F1B986B48B0}
 		{CDD3203C-6821-4D99-8B6B-0022FACBB743} = {46F7EE26-EA87-4922-A4D1-4F1B986B48B0}
+		{488AD439-3100-49B8-A622-8EE5C03DE50C} = {46F7EE26-EA87-4922-A4D1-4F1B986B48B0}
 	EndGlobalSection
 EndGlobal
