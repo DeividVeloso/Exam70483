@@ -253,6 +253,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingDatetime", "Forma
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chap03", "Chap03", "{C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymmetricEncryptionAlgorithm", "SymmetricEncryptionAlgorithm\SymmetricEncryptionAlgorithm.csproj", "{A359253A-D163-40D1-8FA7-ADD13B2C20D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -627,6 +629,10 @@ Global
 		{9773417F-E25D-4D97-B63C-E4909A5148F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9773417F-E25D-4D97-B63C-E4909A5148F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9773417F-E25D-4D97-B63C-E4909A5148F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A359253A-D163-40D1-8FA7-ADD13B2C20D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A359253A-D163-40D1-8FA7-ADD13B2C20D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A359253A-D163-40D1-8FA7-ADD13B2C20D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A359253A-D163-40D1-8FA7-ADD13B2C20D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -748,5 +754,6 @@ Global
 		{740C9A4C-233A-40A9-9A03-84FA216BAC79} = {B680C4F6-A97D-4E26-9E39-2684A252B986}
 		{9773417F-E25D-4D97-B63C-E4909A5148F6} = {B680C4F6-A97D-4E26-9E39-2684A252B986}
 		{C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB} = {4272E115-E9BC-479B-997A-C0037AAA0F26}
+		{A359253A-D163-40D1-8FA7-ADD13B2C20D1} = {C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB}
 	EndGlobalSection
 EndGlobal
