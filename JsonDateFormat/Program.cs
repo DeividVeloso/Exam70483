@@ -16,6 +16,8 @@ namespace JsonDateFormat
             obj.WriteJsonDates();
         }
 
+         
+
         public class LogEntry
         {
             public string Details { get; set; }
