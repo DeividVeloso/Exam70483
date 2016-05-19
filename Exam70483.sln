@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap01", "Cap01", "{878A1189-7DF1-4045-9098-20030CA1232C}"
 EndProject
@@ -264,6 +264,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingSHA256Managed", "UsingSHA256Managed\UsingSHA256Managed.csproj", "{9DEFB49B-72FA-4171-AEE6-B58C40C51CAB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityStringUsing", "SecurityStringUsing\SecurityStringUsing.csproj", "{5E5DA0AA-653F-488E-AAFA-825CEFA0033E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebbugerUsing", "DebbugerUsing\DebbugerUsing.csproj", "{7AC7760E-9A5B-4DAA-B47C-63AF9E2F3649}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -663,6 +665,10 @@ Global
 		{5E5DA0AA-653F-488E-AAFA-825CEFA0033E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E5DA0AA-653F-488E-AAFA-825CEFA0033E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E5DA0AA-653F-488E-AAFA-825CEFA0033E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC7760E-9A5B-4DAA-B47C-63AF9E2F3649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC7760E-9A5B-4DAA-B47C-63AF9E2F3649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC7760E-9A5B-4DAA-B47C-63AF9E2F3649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC7760E-9A5B-4DAA-B47C-63AF9E2F3649}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -790,5 +796,6 @@ Global
 		{3168EB4A-FEEE-4559-B12D-891939265CE7} = {C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB}
 		{9DEFB49B-72FA-4171-AEE6-B58C40C51CAB} = {C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB}
 		{5E5DA0AA-653F-488E-AAFA-825CEFA0033E} = {C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB}
+		{7AC7760E-9A5B-4DAA-B47C-63AF9E2F3649} = {C4A62ACF-65E6-41E5-86E8-3B9BD698BAEB}
 	EndGlobalSection
 EndGlobal
