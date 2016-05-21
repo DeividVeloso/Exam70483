@@ -1,0 +1,63 @@
+﻿@model IEnumerable<UsandoKnockout.Models.Funcionario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estadocivil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.admissao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadocivil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.admissao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.funcionarioId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.funcionarioId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.funcionarioId })
+        </td>
+    </tr>
+}
+
+</table>

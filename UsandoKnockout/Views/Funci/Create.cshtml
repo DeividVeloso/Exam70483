@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+<html>
+<h2>Create</h2>
+
+<head>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/knockout-3.4.0.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <!-- Vincula os TextBoxes na tabela para as propriedades observable definidas no ViewModel -->
+                    <table id="tbldml">
+                        <tr>
+                            <td>ID</td>
+                            <td><input type="text" id="txtid" data-bind="value: funcionarioid" disabled="disabled" /></td>
+                        </tr>
+                        <tr>
+                            <td>Nome</td>
+                            <td><input type="text" id="txtnome" data-bind="value: Nome" /></td>
+                        </tr>
+                        <tr>
+                            <td>Titulo</td>
+                            <td><input type="text" id="txttitulo" data-bind="value: Titulo" /></td>
+                        </tr>
+                        <tr>
+                            <td>Nascimento</td>
+                            <td><input type="text" id="txtnascimento" data-bind="value: Nascimento" /></td>
+                        </tr>
+                        <tr>
+                            <td>Estado Civil</td>
+                            <td><input type="text" id="txtestadocivil" data-bind="value: EstadoCivil" /></td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><input type="text" id="txtsexo" data-bind="value: Sexo"/></td>
+                        </tr>
+                        <tr>
+                            <td>Admissão</td>
+                            <td><input type="text" id="txtadmissao" data-bind="value: Admissao"/></td>
+                        </tr>
+                        <tr>
+                            <!-- A vinculacao click possui os métodos JavaScirpt passados-->
+                            <td><button data-bind="click: save">Salvar</button></td>
+                            <td><button data-bind="click: update">Atualizar</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="FixedContainer">
+                        <table data-bind="visible: Funcionarios().length > 0" style="border: double">
+                            <thead>
+                                <tr>
+                                    <td>ID</td>
+                                    <td>Nome</td>
+                                    <td>Titulo</td>
+                                    <td>Nascimento</td>
+                                    <td>Estado Civil</td>
+                                    <td>Sexo</td>
+                                    <td>Admissão</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <!--Itera através de um observableArray usando foreach-->
+                            <tbody data-bind="foreach: Funcionarios">
+                                <tr style="border: solid" data-bind="click: getfuncionarioselecionado" id="updtr">
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><button data-bind="click: deleterec">Deletar</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript">
+        var FunciViewModel = function () {
+            var self = this;
+            //Declara um observable o qual se vinculará a Interface - UI
+            self.funcionarioid = ko.observable("0");
+            self.Nome = ko.observable("");
+            self.Titulo = ko.observable("");
+            self.Nascimento = ko.observable("");
+            self.EstadoCivil = ko.observable("");
+            self.Sexo = ko.observable("");
+            self.Admissao = ko.observable("");
+
+            //Objeto que armazena os dados entrados nos observables
+            var FunciDados = {
+                funcionarioid: self.funcionarioid,
+                Nome: self.Nome,
+                Titulo: self.Titulo,
+                Nascimento: self.Nascimento,
+                EstadoCivil: self.EstadoCivil,
+                Sexo: self.Sexo,
+                Admissao: self.Admissao
+            };
+
+            //Declara um ObservableArray para armazenar a reposta  JSON
+            self.Funcionarios = ko.observableArray([]);
+
+            GetFuncionarios(); //Chama a função que pega os registros usando uma chamada Ajax
+
+            //Função para raealizar o POSt
+            self.save = function () {
+                //Chamada Ajax para inserir um funcionario
+                $.ajax({
+                    type: "POST",
+                    url: "/Funcionarios/Create",
+                    data: FunciDados, //Converte os dados Observable para JSON
+                    contentType: "application/json",
+                    success: function (data) {
+                        alert("Registro incluído com sucesso");
+                        self.funcionarioid(data.funcionarioid);
+                        alert("O novo ID do Funcionário :" + self.funcionarioid());
+                        GetFuncionarios();
+                    },
+                    error: function () {
+                        alert("Falhou");
+                    }
+                });
+                //fim
+            };
+
+            self.update = function () {
+                var url = "api/Funcionarios" + self.funcionarioid();
+                alert(url);
+                $.ajax({
+                    type: "PUT",
+                    url: url,
+                    data: ko.toJSON(FunciDados),
+                    contentType: "application/json",
+                    success: function (data) {
+                        alert("Registro atualizado com sucesso.");
+                        GetFuncionarios();
+                    },
+                    error: function (error) {
+                        alert(error.status + "<!----!>" + error.statusText);
+                    }
+                });
+            };
+
+            //Função para realizar a operação de DELETE
+            self.deleterec = function (_funcionario) {
+                $.ajax({
+                    type: "DELETE",
+                    url: "Funcionarios/Delete/" + _funcionario.funcionarioid,
+                    success: function (data) {
+                        alert("Registro deletado com sucesso");
+                        GetFuncionarios();//Refresh the Table
+                    },
+                    error: function (error) {
+                        alert(error.status + "<--and--> " + error.statusText);
+                    }
+                });
+                alert("Selecionado :" + _funcionario.funcionarioid)
+            };
+
+            //Função para ler todos os  Funcionarios
+            function GetFuncionarios() {
+                // chamara Ajax para pegar todos os funcionarios
+                $.ajax({
+                    type: "GET",
+                    url: "/Funcionarios/Index",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        self.Funcionarios(data); //Poe a resposta no ObservableArray
+                    },
+                    error: function (error) {
+                        alert(error.status + "<--and--> " + error.statusText);
+                    }
+                });
+                //fim
+            }
+
+            //Função para exibir o registro atualizado
+            self.getselected_funcionario = function (_funcionario) {
+                self.ID(_funcionario.ID),
+                self.Nome(_funcionario.Nome),
+                self.Titulo(_funcionario.Titulo),
+                self.Nascimento(_funcionario.Nascimento),
+                self.EstadoCivil(_funcionario.EstadoCivil),
+                self.Sexo(_funcionario.Sexo),
+                self.Admissao(_funcionario.Admissao)
+            };
+        };
+        ko.applyBindings(new FunciViewModel());
+    </script>
+</body>
+</html>
