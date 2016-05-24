@@ -6,17 +6,21 @@
 
 </head>
 <body>
-    <span data-bind="text: message"></span>
+    <span data-bind="text: message"></span><br/>
+    <button data-bind="click: addExclamationMark"> Add Exclamation Mark</button>
     <script type='text/javascript' src='/Script/knockout-3.4.0.js'></script>
     <script type='text/javascript'>
 		var viewModel = {
-		    message: ko.observable()
+		    message: ko.observable(),
+		    addExclamationMark: function () {
+                this.message(this.message() + "!")
+		    }
 		};
 		viewModel.message("Hello Word");
 
-		viewModel.message.subscribe(function (newValue) {
-		    alert("New message is " + newValue);
-		})  
+		//viewModel.message.subscribe(function (newValue) {
+		//    alert("New message is " + newValue);
+		//})  
 
 		viewModel.message.extend({ notify: 'always' });
 
