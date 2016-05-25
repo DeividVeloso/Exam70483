@@ -12,8 +12,10 @@ namespace JsonDateFormat
     {
         static void Main(string[] args)
         {
-            Program obj = new Program();
-            obj.WriteJsonDates();
+            //Program obj = new Program();
+            //obj.WriteJsonDates();
+
+            ConvertJSONToCSharp.DataJsonToCSharp();
         }
 
          

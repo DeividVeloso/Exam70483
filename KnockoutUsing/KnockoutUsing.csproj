@@ -65,8 +65,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HelloWorld-Example5.html" />
-    <Content Include="HelloWorld-Example1.html" />
+    <Content Include="Chap01\HelloWorld-Example5.html" />
+    <Content Include="Chap01\HelloWorld-Example1.html" />
+    <Content Include="PersonalPage-Blank.html" />
     <Content Include="Script\knockout-3.4.0.js" />
     <Content Include="Web.config" />
   </ItemGroup>

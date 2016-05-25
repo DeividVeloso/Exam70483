@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace JsonDateFormat
 {
-    class ConvertJSONToCSharp
+    public static class ConvertJSONToCSharp
     {
-        public void DataJsonToCSharp()
+        public static void DataJsonToCSharp()
         {
 
-            const string json = "{\"Date\" : \"\\/Date(1463367600-0300)\\/\"}";
+            const string json = "{\"Date\" : \"\\/Date(1464437845000)\\/\"}";
 
             var result = JsonConvert.DeserializeObject<ConvertedDate>(json,
             new IsoDateTimeConverter { DateTimeFormat = "dd/mm/yyyy:hh:mm:ss" });
