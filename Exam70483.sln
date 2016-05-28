@@ -279,10 +279,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introducao", "Introducao", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projeto", "projeto", "{FF7B9AB3-F616-4BF9-894C-877487B95C84}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\projeto\projeto\alura.css = ..\..\..\Downloads\projeto\projeto\alura.css
+		alura.css = alura.css
 		calcula-imc.js = calcula-imc.js
-		..\..\..\Downloads\projeto\projeto\index.html = ..\..\..\Downloads\projeto\projeto\index.html
-		..\..\..\Downloads\projeto\projeto\reset.css = ..\..\..\Downloads\projeto\projeto\reset.css
+		index.html = index.html
+		muda-cor.js = muda-cor.js
+		percorre.js = percorre.js
+		reset.css = reset.css
 	EndProjectSection
 EndProject
 Global
