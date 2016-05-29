@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello world on Knockout.js</title>
+
+</head>
+<body>
+    <span data-bind="text: message"></span>
+    <script type='text/javascript' src='/Script/knockout-3.4.0.js'></script>
+    <script type='text/javascript'>
+		var viewModel = {
+		    message: ko.observable()
+		};
+		viewModel.message("Hello Word");
+
+		viewModel.message.subscribe(function (newValue) {
+		    alert("New message is " + newValue);
+		})  
+
+		viewModel.message.extend({ notify: 'always' });
+
+		ko.applyBindings(viewModel);
+    </script>
+</body>
+</html>
