@@ -38,12 +38,12 @@ function imprimeEModificaTdDeImc(pacienteTr) {
     console.log(imc);
 }
 
-function calculaTodosImc() {
+
+
+var botao = document.getElementById("calcula-imcs");
+botao.addEventListener("click", function () {
     var trsPacientes = document.getElementsByClassName("paciente");
 
     percorreArray(trsPacientes, imprimeEModificaTdDeImc);
 
-}
-
-var botao = document.getElementById("calcula-imcs");
-botao.addEventListener("click", calculaTodosImc);
+});
