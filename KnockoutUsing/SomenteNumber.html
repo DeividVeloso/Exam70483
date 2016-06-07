@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Script/knockout-3.4.0.js"></script>
+    <script type="text/javascript" src="Script/jquery-1.12.4.js"></script>
+
+</head>
+<body>
+    <!--<span data-bind="text: Interval"></span>-->
+    <input type="text" id="input" />
+    <script type="text/javascript">
+
+        $(function(){
+            $('#input').bind('keydown',soNums); // o "#input" é o input que vc quer aplicar a funcionalidade
+        });
+ 
+        function soNums(e){
+ 
+            //teclas adicionais permitidas (tab,delete,backspace,setas direita e esquerda)
+            keyCodesPermitidos = new Array(8,9,37,39,46,109,49,71,190,194);
+     
+            //numeros e 0 a 9 do teclado alfanumerico
+            for(x=48;x<=57;x++){
+                keyCodesPermitidos.push(x);
+            }
+     
+            //numeros e 0 a 9 do teclado numerico
+            for(x=96;x<=105;x++){
+                keyCodesPermitidos.push(x);
+            }
+
+               
+            //Pega a tecla digitada
+            keyCode = e.which; 
+     
+            //Verifica se a tecla digitada é permitida
+            if ($.inArray(keyCode,keyCodesPermitidos) != -1){
+                return true;
+            }    
+            return false;
+        }
+
+        //function MyViewModel() {
+        //    var self = this;
+        //    self.places = ko.observableArray(['London', 'Paris', 'Tokyo']);
+ 
+        //    // The current item will be passed as the first parameter, so we know which place to remove
+        //    self.removePlace = function(place) {
+        //        self.places.remove(place)
+        //    }
+        //}
+        //ko.applyBindings(new MyViewModel());
+
+
+
+        //function SomenteNumeros()
+        //{
+        //    var self = this;
+
+        //    ko.bindingHandlers.numeric = {
+        //        init: function (element) {
+        //            $(element).on("keydown", function (event) {
+        //                // Allow: backspace, delete, tab, escape, and enter
+        //                if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 ||
+        //                    // Allow: Ctrl+A
+        //                    (event.keyCode == 65 && event.ctrlKey === true) ||
+        //                    // Allow: . ,
+        //                    (event.keyCode == 188 || event.keyCode == 190 || event.keyCode == 110) ||
+        //                    // Allow: home, end, left, right
+        //                    (event.keyCode >= 35 && event.keyCode <= 39)) {
+        //                    // let it happen, don't do anything
+        //                    return;
+        //                }
+        //                else {
+        //                    // Ensure that it is a number and stop the keypress
+        //                    if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
+        //                        event.preventDefault();
+        //                    }
+        //                }
+        //            });
+        //        }
+        //    };
+        //};
+        //ko.applyBindings({numero: ko.observable()});
+        ////// Model
+        ////var person = {
+        ////    firstName: "John",
+        ////    age: 30
+        ////};
+        ////// ViewModel
+        ////var PersonViewModel = function () {
+        ////    var self = this;
+        ////    self.firstName = ko.observable(person.firstName);
+        ////    self.age = ko.observable(person.age);
+        ////};
+        ////// Apply
+        ////ko.applyBindings(PersonViewModel);
+    </script>
+</body>
+</html>
