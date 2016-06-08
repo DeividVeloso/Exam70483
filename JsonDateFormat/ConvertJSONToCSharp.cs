@@ -13,7 +13,9 @@ namespace JsonDateFormat
         public static void DataJsonToCSharp()
         {
 
-            const string json = "{\"Date\" : \"\\/Date(1464437845000)\\/\"}";
+            const string json = "{\"Date\" : \"\\/Date(1465344000000-0300)\\/\"}";
+
+            //\/Date(1465344000000-0300)\/
 
             var result = JsonConvert.DeserializeObject<ConvertedDate>(json,
             new IsoDateTimeConverter { DateTimeFormat = "dd/mm/yyyy:hh:mm:ss" });
