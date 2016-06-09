@@ -15,7 +15,19 @@ namespace JsonDateFormat
             //Program obj = new Program();
             //obj.WriteJsonDates();
 
+          //  var result = ConvertJSONToCSharp.GetJSON(DateTime.Now);
+
             ConvertJSONToCSharp.DataJsonToCSharp();
+            //ConvertJSONToCSharp.DataJsonToCSharp();
+            //ConvertJSONToCSharp obj = new ConvertJSONToCSharp();
+            //obj.WriteJsonDates();
+
+           // JavaScriptSerializer js = new JavaScriptSerializer();
+
+
+                //var msJsonDate = '{ data: "\\/Date(1238025600000)\\/" }'; 
+                //var day = Sys.Serialization.JavaScriptSerializer.deserialize(msJsonDate); 
+                //alert(day.toString());
         }
 
          
