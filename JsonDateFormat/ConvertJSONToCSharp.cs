@@ -16,7 +16,7 @@ namespace JsonDateFormat
             const string json = "{\"Date\" : \"\\/Date(1465344000000-0300)\\/\"}";
 
             //\/Date(1465344000000-0300)\/
-
+            
             var result = JsonConvert.DeserializeObject<ConvertedDate>(json,
             new IsoDateTimeConverter { DateTimeFormat = "dd/mm/yyyy:hh:mm:ss" });
 

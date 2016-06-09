@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap01", "Cap01", "{878A1189-7DF1-4045-9098-20030CA1232C}"
 EndProject
@@ -321,6 +321,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingHashSetT", "UsingHashSetT\UsingHashSetT.csproj", "{471B95CC-0570-4EE5-939E-2BE73CF1FFC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCollectionCustom", "UsingCollectionCustom\UsingCollectionCustom.csproj", "{0E9BF734-E491-4A17-B9CC-9D35995B89DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{8BD26146-AF24-471A-BFFC-06B8423562FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -776,6 +778,10 @@ Global
 		{0E9BF734-E491-4A17-B9CC-9D35995B89DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E9BF734-E491-4A17-B9CC-9D35995B89DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E9BF734-E491-4A17-B9CC-9D35995B89DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD26146-AF24-471A-BFFC-06B8423562FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD26146-AF24-471A-BFFC-06B8423562FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD26146-AF24-471A-BFFC-06B8423562FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD26146-AF24-471A-BFFC-06B8423562FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -924,5 +930,6 @@ Global
 		{4F7FC7DB-8957-43F8-AB3F-498DACF410F3} = {F42A1879-635E-4599-B73C-B7C6886AFC6C}
 		{471B95CC-0570-4EE5-939E-2BE73CF1FFC3} = {4F7FC7DB-8957-43F8-AB3F-498DACF410F3}
 		{0E9BF734-E491-4A17-B9CC-9D35995B89DC} = {4F7FC7DB-8957-43F8-AB3F-498DACF410F3}
+		{8BD26146-AF24-471A-BFFC-06B8423562FA} = {F8F4449B-8191-4C8D-B983-B69E3B626611}
 	EndGlobalSection
 EndGlobal
