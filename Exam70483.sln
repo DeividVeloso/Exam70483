@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cap01", "Cap01", "{878A1189-7DF1-4045-9098-20030CA1232C}"
 EndProject
@@ -315,6 +315,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective 4.4", "Objective 4.4", "{527D0D60-317F-4F12-97A4-7E958D2479DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingXmlSerializer", "UsingXmlSerializer\UsingXmlSerializer.csproj", "{9AD968D2-CE62-420C-90BD-DD28ADCB10B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective 4.5", "Objective 4.5", "{6E3CAF46-2CAD-491B-AEF9-1C51E97178F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingArray", "UsingArray\UsingArray.csproj", "{2557B38B-ED1E-483C-852E-CBEE3DFA6037}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -762,6 +766,10 @@ Global
 		{9AD968D2-CE62-420C-90BD-DD28ADCB10B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AD968D2-CE62-420C-90BD-DD28ADCB10B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AD968D2-CE62-420C-90BD-DD28ADCB10B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2557B38B-ED1E-483C-852E-CBEE3DFA6037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2557B38B-ED1E-483C-852E-CBEE3DFA6037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2557B38B-ED1E-483C-852E-CBEE3DFA6037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2557B38B-ED1E-483C-852E-CBEE3DFA6037}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -907,5 +915,7 @@ Global
 		{C04F1425-CCE8-49DA-8EC2-4524BA5A3C94} = {B91A7323-333F-41BB-A34C-B14D67293084}
 		{527D0D60-317F-4F12-97A4-7E958D2479DD} = {F42A1879-635E-4599-B73C-B7C6886AFC6C}
 		{9AD968D2-CE62-420C-90BD-DD28ADCB10B9} = {527D0D60-317F-4F12-97A4-7E958D2479DD}
+		{6E3CAF46-2CAD-491B-AEF9-1C51E97178F0} = {F42A1879-635E-4599-B73C-B7C6886AFC6C}
+		{2557B38B-ED1E-483C-852E-CBEE3DFA6037} = {6E3CAF46-2CAD-491B-AEF9-1C51E97178F0}
 	EndGlobalSection
 EndGlobal
