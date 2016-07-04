@@ -17,7 +17,7 @@ namespace JsonDateFormat
             string json = JsonConvert.SerializeObject(new ConvertedDate() { Date = DateTime.Now });
 
             //const string json = "{\"Date\" : \"\\/Date(765763211111)\\/\"}";
-            
+
             var result = JsonConvert.DeserializeObject<ConvertedDate>(json, new IsoDateTimeConverter { DateTimeFormat = "dd/mm/yyyy:hh:mm:ss" });
 
             Console.WriteLine(result.Date);
